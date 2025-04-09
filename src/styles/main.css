@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Main background gradient */
+  .main-bg {
+    @apply bg-gradient-to-br from-purple-500 via-pink-500 to-orange-400 min-h-screen;
+  }
+
+  /* Container styles */
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8;
+  }
+
+  /* Card styles */
+  .card {
+    @apply bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 hover:shadow-2xl transition-all duration-300;
+  }
+
+  /* Button styles */
+  .btn-primary {
+    @apply bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-3 rounded-xl font-semibold hover:from-purple-700 hover:to-pink-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl;
+  }
+
+  .btn-secondary {
+    @apply bg-white/20 backdrop-blur-sm text-white px-6 py-3 rounded-xl font-semibold hover:bg-white/30 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl;
+  }
+
+  /* Input styles */
+  .input-field {
+    @apply w-full px-4 py-3 rounded-xl border-2 border-purple-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-all duration-300 bg-white/90 backdrop-blur-sm;
+  }
+
+  /* Header styles */
+  .page-header {
+    @apply text-4xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text;
+  }
+
+  .welcome-message {
+    @apply text-xl text-white/90 mb-8;
+  }
+
+  /* Grid layouts */
+  .grid-layout {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+
+  /* Feature boxes */
+  .feature-box {
+    @apply card p-6 hover:transform hover:scale-105 transition-all duration-300;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-white/20;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-purple-500 to-pink-500 rounded-full hover:from-purple-600 hover:to-pink-600 transition-colors duration-300;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+
+  /* Navigation styles */
+  .nav-link {
+    @apply text-white/90 hover:text-white transition-colors duration-300;
+  }
+
+  .nav-link.active {
+    @apply text-white font-semibold;
+  }
+
+  /* Modal styles */
+  .modal-overlay {
+    @apply fixed inset-0 bg-black/50 backdrop-blur-sm flex items-center justify-center;
+  }
+
+  .modal-content {
+    @apply bg-white/90 backdrop-blur-sm rounded-2xl p-8 max-w-2xl w-full mx-4 shadow-2xl;
+  }
+} 
