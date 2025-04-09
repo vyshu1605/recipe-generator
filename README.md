@@ -4,6 +4,7 @@ Overview
 SavorySync is a modern web application that helps users generate, manage, and share recipes. Built with vanilla JavaScript and featuring a beautiful, responsive UI, it provides a seamless experience for culinary enthusiasts. The application allows users to create personalized recipes, manage grocery lists, document culinary memories, and connect with a community of food lovers.
 
 Project Structure
+```
 
 savorysync/
 ├── src/
